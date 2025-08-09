@@ -2,4 +2,4 @@ discord.py-self==2.0.0
 Flask
 colorama
 python-dotenv
-audioop
+
