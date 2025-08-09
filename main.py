@@ -595,7 +595,7 @@ async def banbypass(ctx):
 @bot.event
 async def on_ready():
     activity = discord.Game(name="DM for help", type=4)
-    await bot.change_presence(status=discord.Status.idle, activity=activity)
+    await bot.change_presence(status=discord.Status.dnd, activity=activity)
     print(f'''{Fore.RED}
 ██╗░░██╗███████╗██████╗░██╗
 ██║░░██║██╔════╝██╔══██╗██║
