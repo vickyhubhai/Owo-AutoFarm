@@ -1,5 +1,24 @@
 # TerrorBhai OWO Auto Farm Bot
 
+## Deploying to Render
+
+1. **Fork or upload this repository to your own GitHub.**
+2. **Create a new Worker Service on Render:**
+   - Connect your GitHub repo.
+   - Set the build command to `pip install -r requirements.txt`.
+   - Set the start command to `python main.py`.
+3. **Set the `TOKEN` environment variable** in the Render dashboard (do not use `.env` on Render).
+4. **(Optional)**: Set `autoDeploy` to `false` in `render.yaml` if you want to manually control deployments.
+
+### Environment Variables
+- `TOKEN`: Your Discord account token (keep this secret!).
+
+### Notes
+- This bot uses `discord.py-self` (selfbotting is against Discord ToS; use at your own risk).
+- The bot will not work unless the `TOKEN` is set as an environment variable on Render.
+
+---
+
 A powerful Discord self-bot for automating OwO Bot farming, created by Vicky (TerrorBhai).
 
 ## Features

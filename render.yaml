@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: owo-auto-farm-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    autoDeploy: false
